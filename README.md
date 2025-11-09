@@ -1,38 +1,30 @@
-# test-lebedev-app
+# ArtLebedev Test App
 
-This template should help get you started developing with Vue 3 in Vite.
+Компонент автоформы на Vue 3, который строит форму на основе переданной JSON-схемы (FormGenerator.vue).
+Конкретно, парсим переданный Json и передаем в компонент, который строит форму с соответствующими инпутами.
+Можно поиграться с Json'ом, посмотреть как отрабатываются возможные ошибки
 
-## Recommended IDE Setup
+## Технологии
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3 + Composition API
+- Vite
+- SCSS
 
-## Recommended Browser Setup
+## Структура проекта
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+```
+src/
+├── assets/          # Статические ресурсы
+│   └── styles/      # SCSS стили
+├── components/      # Vue компоненты
+├── composables/     # Сервисы
+```
 
-## Customize configuration
+## Установка и запуск
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/StickToYourGuns/test-lebedev-app.git
+cd test-lebedev-app
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
