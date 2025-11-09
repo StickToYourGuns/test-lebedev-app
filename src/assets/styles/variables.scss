@@ -1,0 +1,19 @@
+$spacing-xs: 8px;
+$spacing-s: 12px;
+$spacing-m: 16px;
+$spacing-l: 24px;
+
+$color-background: #F5F5EA;
+$color-red: #f41224;
+
+// Анимации
+.slide-enter-active,
+.slide-leave-active {
+    transition: all 0.3s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+    opacity: 0;
+    transform: translateY(-5px);
+}
